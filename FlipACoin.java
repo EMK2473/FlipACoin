@@ -20,6 +20,10 @@ public class FlipACoin {
       Scanner scnr = new Scanner(System.in);
       Random rand = new Random(2); // Unique seed
       
-      // TODO: Complete main here
+      int numFlips = scnr.nextInt();
+      for(int i = 0; i < numFlips; ++i){
+        System.out.println(coinFlip(rand));
+      }
+      scnr.close();
    }
 }
